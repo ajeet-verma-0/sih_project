@@ -38,6 +38,7 @@ class OnBoardingScreen extends StatelessWidget {
         alignment: Alignment.center,
         children: [
           LiquidSwipe(
+            // as;jdlajsdl
             pages: obController.pages,
             enableSideReveal: true,
             liquidController: obController.controller,
@@ -45,6 +46,7 @@ class OnBoardingScreen extends StatelessWidget {
             slideIconWidget: const Icon(Icons.arrow_back_ios),
             waveType: WaveType.circularReveal,
           ),
+
           Positioned(
             bottom: 60.0,
             child: OutlinedButton(
@@ -74,6 +76,7 @@ class OnBoardingScreen extends StatelessWidget {
           Obx(
             () => Positioned(
               bottom: 10,
+              // asdhashdkasj
               child: AnimatedSmoothIndicator(
                   count: 3,
                   activeIndex: obController.currentPage.value,
