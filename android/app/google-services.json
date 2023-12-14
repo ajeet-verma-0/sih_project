@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1028437984243",
+    "project_id": "flutter-login-app-f9be8",
+    "storage_bucket": "flutter-login-app-f9be8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1028437984243:android:6072633fe56717f42c0886",
+        "android_client_info": {
+          "package_name": "com.example.rural_education"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArqccmWtBZWEsitcCd1s1BZBml6748a1c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

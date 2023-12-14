@@ -1,0 +1,47 @@
+name: rural_education
+description: A new Flutter project.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.6 <4.0.0'
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  google_fonts: ^6.1.0
+  flutter_native_splash: ^2.3.2
+  firebase_core: ^2.24.2
+  get: ^4.6.5
+  liquid_swipe: ^3.1.0
+  smooth_page_indicator: ^1.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+
+flutter_native_splash:
+  color: "#f76f1"
+  color_dark: "#272727"
+  image: assets/images/k.png
+  image_dark: assets/images/k.png
+
+android_12:
+   image: assets/images/k.png
+   icon_background_color: "f7f6f1"
+   image_dark: assets/images/k.png
+   icon_background_color_dark: "#272727"
+
+flutter:
+  uses-material-design: true
+
+
+  assets:
+    - assets/images/
+    - assets/images/splash_images/
+    - assets/images/on_boarding_images/
+    # - images/a_dot_ham.jpeg
+
