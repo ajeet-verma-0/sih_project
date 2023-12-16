@@ -1,18 +1,21 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:get/get.dart';
-import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:liquid_swipe/liquid_swipe.dart';
+import 'package:rural_education/firebase_options.dart';
 import 'package:rural_education/src/constants/colors.dart';
 import 'package:rural_education/src/features/authentication/controllers/on_boarding_controller.dart';
-import 'package:rural_education/src/features/authentication/screens/splash_screen/splash_screen.dart';
+import 'package:rural_education/src/features/repository/authentication_repository/authentication_repository.dart';
 import 'package:rural_education/src/utils/theme/theme.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
-void main() => runApp(const App());
+void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  Firebase.initializeApp(options:DefaultFirebaseOptions.currentPlatform).then((value) => Get.put(AuthenticationRepository()));
+  runApp(const App()); }
 
 class App extends StatelessWidget {
-  const App({Key? key}) : super(key: key);
+  const App({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -20,14 +23,17 @@ class App extends StatelessWidget {
       theme: TAppTheme.lightTheme,
       darkTheme: TAppTheme.darkTheme,
       themeMode: ThemeMode.system,
-      home: OnBoardingScreen(),
+      debugShowCheckedModeBanner: false,
+      defaultTransition: Transition.leftToRightWithFade,
+      transitionDuration: const Duration(milliseconds:500 ),
+      home: const CircularProgressIndicator(),
     );
-    // asdhaj
+
   }
 }
 
 class OnBoardingScreen extends StatelessWidget {
-  const OnBoardingScreen({Key? key}) : super(key: key);
+  const OnBoardingScreen({super.key});
 
   get child => null;
 
@@ -53,10 +59,9 @@ class OnBoardingScreen extends StatelessWidget {
             child: OutlinedButton(
               onPressed: () => obController.animateToNextSlide(),
               style: ElevatedButton.styleFrom(
-                side: const BorderSide(color: Colors.black26),
+                foregroundColor: Colors.white, side: const BorderSide(color: Colors.black26),
                 shape: const CircleBorder(),
                 padding: const EdgeInsets.all(20),
-                onPrimary: Colors.white,
               ),
               child: Container(
                 padding: const EdgeInsets.all(20.0),

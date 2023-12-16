@@ -43,8 +43,8 @@ class SplashScreen extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(tAppName, style: Theme.of(context).textTheme.headline3),
-                    Text(tAppTagLine, style: Theme.of(context).textTheme.headline2)
+                    Text(tAppName, style: Theme.of(context).textTheme.displaySmall),
+                    Text(tAppTagLine, style: Theme.of(context).textTheme.displayMedium)
                   ],
                 ),
               ),
@@ -74,7 +74,7 @@ class SplashScreen extends StatelessWidget {
                   height: tSplashContainerSize,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(100),
-                    color: tPrimaryColour,
+                    color: tPrimaryColor,
                   ),
                 ),
               ),

@@ -1,5 +1,3 @@
-import 'dart:ui';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_state_manager/src/rx_flutter/rx_obx_widget.dart';
 import 'package:liquid_swipe/liquid_swipe.dart';
@@ -9,7 +7,7 @@ import '../../../../constants/colors.dart';
 import '../../controllers/on_boarding_controller.dart';
 
 class OnBoardingScreen extends StatelessWidget {
-  const OnBoardingScreen({Key? key}) : super(key: key);
+  const OnBoardingScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -30,10 +28,9 @@ class OnBoardingScreen extends StatelessWidget {
             bottom: 60.0,
             child: OutlinedButton(
             onPressed: () => obController.animateToNextSlide(),
-    style: ElevatedButton.styleFrom( side: const BorderSide(color: Colors.black26),
+    style: ElevatedButton.styleFrom( foregroundColor: Colors.white, side: const BorderSide(color: Colors.black26),
       shape: const CircleBorder(),
       padding: const EdgeInsets.all(20),
-      onPrimary: Colors.white,
     ),
               child: Container(
                 padding: const EdgeInsets.all(20.0),
