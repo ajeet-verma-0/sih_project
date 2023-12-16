@@ -214,6 +214,7 @@ class _MessageCardState extends State<MessageCard> {
                       name: 'Save Image',
                       onTap: () async {
                         try {
+                          
                           log('Image Url: ${widget.message.msg}');
                           await GallerySaver.saveImage(
                             widget.message.msg,

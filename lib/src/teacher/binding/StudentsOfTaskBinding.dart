@@ -1,6 +1,7 @@
 import 'package:get/get.dart';
-import 'package:school_management_system/teacher/controllers/TasksControllers/CheckedStudentTaskInfoController.dart';
 
+
+import '../controllers/TasksControllers/CheckedStudentTaskInfoController.dart';
 import '../controllers/TasksControllers/studentTaskInfo.dart';
 
 class StudentsOfTaskBinding implements Bindings {

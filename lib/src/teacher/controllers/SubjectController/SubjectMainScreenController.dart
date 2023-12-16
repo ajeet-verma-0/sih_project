@@ -1,5 +1,7 @@
 import 'package:get/state_manager.dart';
-import 'package:school_management_system/teacher/resources/TsubjectsServices/TlessonsServices.dart';
+
+import '../../resources/TsubjectsServices/TlessonsServices.dart';
+
 
 class SubjectMainScreenController extends GetxController {
   var lessonServices = TLessonsServices();

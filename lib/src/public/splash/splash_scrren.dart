@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:school_management_system/public/splash/splash_controller.dart';
 
+import 'splash_controller.dart';
+
 class Splash extends StatelessWidget {
    Splash({Key? key}) : super(key: key);
 

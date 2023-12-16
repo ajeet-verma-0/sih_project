@@ -2,14 +2,17 @@ import 'dart:async';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_storage/firebase_storage.dart';
-import 'package:school_management_system/student/resources/chat/chat_data.dart';
-import 'package:school_management_system/teacher/model/message.dart';
+import 'package:liquid_swipe/liquid_swipe.dart';
+import 'package:rural_education/src/student/models/chat/message.dart';
+
 
 
 import 'dart:io';
 
-import 'package:school_management_system/teacher/model/user.dart';
-import 'package:school_management_system/teacher/resources/chat/chat_utils.dart';
+import 'package:rural_education/src/student/models/user.dart';
+
+import '../../../student/data.dart';
+
 
 class FirebaseApi {
   static Stream<List<User>> getUsers() => FirebaseFirestore.instance

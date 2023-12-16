@@ -7,23 +7,25 @@ import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:google_sign_in/google_sign_in.dart';
-import 'package:school_management_system/public/auth/auth_methods.dart';
-import 'package:school_management_system/public/config/user_information.dart';
-import 'package:school_management_system/public/login/dividerforparent.dart';
-import 'package:school_management_system/public/login/dividerwithtext.dart';
-import 'package:school_management_system/public/utils/constant.dart';
-import 'package:school_management_system/public/utils/font_style.dart';
-import 'package:school_management_system/public/widgets/circuled_button.dart';
-import 'package:school_management_system/public/widgets/custom_button.dart';
-import 'package:school_management_system/public/widgets/custom_formfield.dart';
+
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:rounded_loading_button/rounded_loading_button.dart';
-import 'package:school_management_system/public/widgets/parent_dialog.dart';
-import 'package:school_management_system/student/view/Home/messaging.dart';
+
+import '../../student/view/Home/messaging.dart';
+import '../auth/auth_methods.dart';
+import '../config/user_information.dart';
+import '../utils/constant.dart';
+import '../utils/font_style.dart';
 import '../utils/util.dart';
+import '../widgets/circuled_button.dart';
+import '../widgets/custom_button.dart';
 import '../widgets/custom_dialog.dart';
+import '../widgets/custom_formfield.dart';
+import '../widgets/parent_dialog.dart';
 import '../widgets/rounded_button.dart';
 import '../widgets/send_email_container.dart';
+import 'dividerforparent.dart';
+import 'dividerwithtext.dart';
 import 'login_label.dart';
 
 class LoginScreen extends StatefulWidget {

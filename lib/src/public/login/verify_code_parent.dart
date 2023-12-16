@@ -2,11 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
-import 'package:school_management_system/public/config/user_information.dart';
-import 'package:school_management_system/public/utils/constant.dart';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
+import '../config/user_information.dart';
+import '../utils/constant.dart';
 import '../utils/util.dart';
 import '../widgets/custom_verify_textfield.dart';
 

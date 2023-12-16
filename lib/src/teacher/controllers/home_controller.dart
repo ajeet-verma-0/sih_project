@@ -1,15 +1,14 @@
 import 'package:get/get.dart';
-import 'package:school_management_system/teacher/Teacher_global_info/Subjects_of_teacher/TeacherSubjects.dart';
-import 'package:school_management_system/teacher/controllers/SubjectController/TeacherSubjectController.dart';
-import 'package:school_management_system/teacher/model/Home/classRoomModel.dart';
-import 'package:school_management_system/teacher/resources/TClassesService/TClassesServices.dart';
-import 'package:school_management_system/teacher/resources/program/Programapi.dart';
-import 'package:school_management_system/teacher/view/Adjuncts/TeacherAdjuncts.dart';
-import 'package:school_management_system/teacher/view/Chat/chats_page.dart';
-import 'package:school_management_system/teacher/view/Home/teacher_home.dart';
-import 'package:school_management_system/teacher/view/tasks/TeacherTasksPage.dart';
 
+import '../../student/view/Chat/chats_page.dart';
+import '../Teacher_global_info/Subjects_of_teacher/TeacherSubjects.dart';
+import '../resources/TClassesService/TClassesServices.dart';
 import '../resources/TsubjectsServices/TsubjectsServices.dart';
+import '../resources/program/Programapi.dart';
+import '../view/Adjuncts/TeacherAdjuncts.dart';
+import '../view/Home/teacher_home.dart';
+import '../view/tasks/index.dart';
+import 'SubjectController/TeacherSubjectController.dart';
 
 class TeacherHomeController extends GetxController {
   var classesServices = TClassesServices();

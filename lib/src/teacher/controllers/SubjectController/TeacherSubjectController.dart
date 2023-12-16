@@ -1,7 +1,8 @@
 import 'package:get/get.dart';
-import 'package:school_management_system/teacher/controllers/home_controller.dart';
-import 'package:school_management_system/teacher/model/subject/TeacherSubjectModel.dart';
-import 'package:school_management_system/teacher/resources/TsubjectsServices/TsubjectsServices.dart';
+
+import '../../resources/TsubjectsServices/TsubjectsServices.dart';
+
+
 
 class TeacherSubjectController extends GetxController {
   var grade = ''.obs;

@@ -4,9 +4,10 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+import '../../../main.dart';
 import '../api/apis.dart';
 import '../helper/dialogs.dart';
-import '../main.dart';
+// import '../main.dart';
 import '../models/chat_user.dart';
 import '../widgets/chat_user_card.dart';
 import 'profile_screen.dart';

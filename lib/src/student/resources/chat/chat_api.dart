@@ -2,8 +2,9 @@ import 'dart:async';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_storage/firebase_storage.dart';
-import 'package:school_management_system/student/resources/chat/chat_data.dart';
+// import 'package:school_management_system/student/resources/chat/chat_data.dart';
 
+import '../../data.dart';
 import '../../models/chat/message.dart';
 import '../../models/user.dart';
 import 'chat_utils.dart';

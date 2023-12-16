@@ -1,9 +1,11 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:school_management_system/public/config/user_information.dart';
-import 'package:school_management_system/teacher/model/ProfileModels/SProfileInfoModel.dart';
-import 'package:school_management_system/teacher/model/subject/TMarksModel.dart';
-import 'package:school_management_system/teacher/resources/TsubjectsServices/TMarksServices.dart';
-import 'package:school_management_system/teacher/view/SProfile/SProfileScreen.dart';
+
+
+import '../../../public/config/user_information.dart';
+import '../../model/ProfileModels/SProfileInfoModel.dart';
+import '../../model/subject/TMarksModel.dart';
+import '../../view/SProfile/SProfileScreen.dart';
+import '../TsubjectsServices/TMarksServices.dart';
 
 class SprofileServices {
   getStudentInfo(String id) async {
@@ -86,7 +88,8 @@ class SprofileServices {
             exam1: exam1,
             exam2: exam2,
           ));
-          dropController.subjectsDrop.value[subjectName.toString()] =
+          dro
+          pController.subjectsDrop.value[subjectName.toString()] =
               subjectId.toString();
           print('Subject name is ');
           print(subjectName.toString());

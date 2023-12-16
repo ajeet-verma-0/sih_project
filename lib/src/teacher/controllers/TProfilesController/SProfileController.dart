@@ -1,9 +1,11 @@
 import 'package:get/get.dart';
 import 'package:get/state_manager.dart';
-import 'package:school_management_system/teacher/controllers/SubjectController/TMarksController.dart';
-import 'package:school_management_system/teacher/model/ProfileModels/SProfileInfoModel.dart';
-import 'package:school_management_system/teacher/resources/ProfilesServices/SProfileservices.dart';
-import 'package:school_management_system/teacher/view/SProfile/SProfileScreen.dart';
+
+import '../../model/ProfileModels/SProfileInfoModel.dart';
+import '../../resources/ProfilesServices/SProfileservices.dart';
+import '../../view/SProfile/SProfileScreen.dart';
+import '../SubjectController/TMarksController.dart';
+
 
 class SProfileController extends GetxController {
   var services = SprofileServices();

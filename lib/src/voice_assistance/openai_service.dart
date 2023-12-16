@@ -1,7 +1,9 @@
 import 'dart:convert';
 
-import 'package:allen/secrets.dart';
+// import 'package:allen/secrets.dart';
 import 'package:http/http.dart' as http;
+
+import 'secrets.dart';
 
 class OpenAIService {
   final List<Map<String, String>> messages = [];

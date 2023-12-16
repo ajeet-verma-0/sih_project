@@ -44,6 +44,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     //initializing media query (for getting device screen size)
+    
     mq = MediaQuery.of(context).size;
 
     return Scaffold(

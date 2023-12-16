@@ -2,15 +2,13 @@ import 'dart:io';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:get/get.dart';
-import 'package:school_management_system/student/models/Adjuncts/filtter/gradeCircle.dart';
-import 'package:school_management_system/student/view/Adjuncts/Component/filtter/filtterComponent/subjectFiltter.dart';
-import 'package:school_management_system/teacher/model/Home/classroomSectionModel.dart';
-import 'package:school_management_system/teacher/model/Tasks/tasksModel.dart';
-import 'package:school_management_system/teacher/view/tasks/AddFiles/components/Tgrade.dart';
-import 'package:path/path.dart';
-import 'package:school_management_system/teacher/view/tasks/TeacherTasksPage.dart';
 
+import 'package:path/path.dart';
+
+
+import '../../model/Tasks/tasksModel.dart';
 import '../../resources/TaskServices/TaskServices.dart';
+import '../../view/tasks/index.dart';
 
 class BottomSheetController extends GetxController {
   var taskServices = TaskServices();

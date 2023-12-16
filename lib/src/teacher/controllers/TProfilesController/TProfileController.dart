@@ -1,8 +1,9 @@
 import 'package:get/state_manager.dart';
-import 'package:school_management_system/public/config/user_information.dart';
-import 'package:school_management_system/teacher/model/ProfileModels/TProfileInfoModel.dart';
 
+
+import '../../../public/config/user_information.dart';
 import '../../Teacher_global_info/Subjects_of_teacher/TeacherSubjects.dart';
+import '../../model/ProfileModels/TProfileInfoModel.dart';
 import '../../resources/ProfilesServices/TprofileServices.dart';
 
 class TProfileController extends GetxController {

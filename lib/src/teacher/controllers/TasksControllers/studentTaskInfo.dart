@@ -2,13 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:get/get.dart';
 import 'package:get/state_manager.dart';
-import 'package:school_management_system/teacher/controllers/TasksControllers/CheckedStudentTaskInfoController.dart';
-import 'package:school_management_system/teacher/model/Tasks/studentTaskInfo.dart';
-import 'package:school_management_system/teacher/resources/TaskServices/TaskServices.dart';
-import 'package:school_management_system/teacher/view/tasks/studentsOfTask.dart';
 
-import '../../../main.dart';
+
 import '../../model/Tasks/checkedStudentTaskInfo.dart';
+import '../../model/Tasks/studentTaskInfo.dart';
+import '../../resources/TaskServices/TaskServices.dart';
+import 'CheckedStudentTaskInfoController.dart';
 
 class StudentTaskInfoController extends GetxController {
   var taskServices = TaskServices();
@@ -58,6 +57,7 @@ class StudentTaskInfoController extends GetxController {
   }
 
   showNotification(String filename, String path) {
+    var flutterLocalNotificationsPlugin;
     flutterLocalNotificationsPlugin.show(
         0,
         filename,

@@ -1,7 +1,7 @@
 import 'package:file_picker/file_picker.dart';
 import 'package:get/state_manager.dart';
-import 'package:school_management_system/teacher/resources/TaskServices/TaskServices.dart';
 
+import '../../resources/TaskServices/TaskServices.dart';
 class TeacherTasksController extends GetxController {
   var taskServices = TaskServices();
 

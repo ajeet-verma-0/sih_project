@@ -1,12 +1,13 @@
 import 'dart:io';
 
 import 'package:get/get.dart';
-import 'package:school_management_system/teacher/model/TRefrenceModels/TAddvideoModel.dart';
-import 'package:school_management_system/teacher/model/TRefrenceModels/TpdfAddFileModel.dart';
-import 'package:school_management_system/teacher/resources/TAdjunctsServices/TAdjunctsServices.dart';
+
 import 'package:path/path.dart';
 
 import '../../Teacher_global_info/Subjects_of_teacher/TeacherSubjects.dart';
+import '../../model/TRefrenceModels/TAddvideoModel.dart';
+import '../../model/TRefrenceModels/TpdfAddFileModel.dart';
+import '../../resources/TAdjunctsServices/TAdjunctsServices.dart';
 
 class TreferenceBottomsheetController extends GetxController {
   var refServices = TAdjunctsServices();

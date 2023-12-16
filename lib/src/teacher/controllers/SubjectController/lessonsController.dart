@@ -1,8 +1,10 @@
 import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
-import 'package:school_management_system/student/models/Subjects/SubjectsModel.dart';
-import 'package:school_management_system/teacher/model/subject/LessonsResponseModels.dart';
-import 'package:school_management_system/teacher/resources/TsubjectsServices/TlessonsServices.dart';
+
+import '../../../student/models/Subjects/SubjectsModel.dart';
+import '../../model/subject/LessonsResponseModels.dart';
+import '../../resources/TsubjectsServices/TlessonsServices.dart';
+
 
 class TLessonsController extends GetxController {
   var lessonService = TLessonsServices();

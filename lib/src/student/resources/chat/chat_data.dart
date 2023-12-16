@@ -1,5 +1,7 @@
 
-import 'package:school_management_system/public/config/user_information.dart';
+// import 'package:school_management_system/public/config/user_information.dart';
+
+import '../../../public/config/user_information.dart';
 
 String myId = UserInformation.User_uId;
 String myUsername = UserInformation.first_name;
