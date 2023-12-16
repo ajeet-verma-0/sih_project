@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:school_management_system/teacher/data.dart';
-import 'package:school_management_system/teacher/model/message.dart';
-import 'package:school_management_system/teacher/resources/chat/chat_api.dart';
-import 'package:school_management_system/teacher/widgets/message_widget.dart';
+
+import '../../student/Widgets/message_widget.dart';
+import '../../student/data.dart';
+import '../../student/models/chat/message.dart';
+import '../../student/resources/chat/chat_api.dart';
 
 
 class MessagesWidget extends StatelessWidget {

@@ -3,15 +3,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:school_management_system/public/utils/constant.dart';
-import 'package:school_management_system/public/utils/font_families.dart';
-import 'package:school_management_system/student/controllers/lessonsController.dart';
-import 'package:school_management_system/teacher/controllers/SubjectController/lessonsController.dart';
-import 'package:school_management_system/teacher/controllers/TasksControllers/bottomSheetController.dart';
-import 'package:school_management_system/teacher/view/tasks/TeacherTasksPage.dart';
-import 'package:school_management_system/teacher/widgets/ConnectionStateMessages.dart';
-import 'package:school_management_system/teacher/widgets/Skilton.dart';
 import 'package:shimmer/shimmer.dart';
+
+import '../../../public/utils/constant.dart';
+import '../../../public/utils/font_families.dart';
+import '../../controllers/SubjectController/lessonsController.dart';
+import '../../controllers/TasksControllers/bottomSheetController.dart';
+import '../../widgets/ConnectionStateMessages.dart';
+import '../../widgets/Skilton.dart';
+import '../tasks/index.dart';
 
 var _controller = Get.put(TLessonsController());
 

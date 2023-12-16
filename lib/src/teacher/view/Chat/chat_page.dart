@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:school_management_system/public/utils/constant.dart';
-import 'package:school_management_system/teacher/model/user.dart';
-import 'package:school_management_system/teacher/widgets/messages_widget.dart';
-import 'package:school_management_system/teacher/widgets/new_message_widget.dart';
-import 'package:school_management_system/teacher/widgets/profile_header_widget.dart';
+
+import '../../../public/utils/constant.dart';
+import '../../../student/Widgets/messages_widget.dart';
+import '../../../student/Widgets/new_message_widget.dart';
+import '../../../student/Widgets/profile_header_widget.dart';
+import '../../../student/models/user.dart';
 
 class ChatPage extends StatefulWidget {
   final User user;

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:school_management_system/public/utils/constant.dart';
-import 'package:school_management_system/public/utils/font_style.dart';
+
+import '../utils/constant.dart';
+import '../utils/font_style.dart';
+
 
 class DividerParent extends StatelessWidget {
   const DividerParent({

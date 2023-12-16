@@ -2,15 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:get/get_state_manager/get_state_manager.dart';
-import 'package:school_management_system/public/utils/constant.dart';
-import 'package:school_management_system/public/utils/font_families.dart';
-import 'package:school_management_system/student/Widgets/animated_progress_indicator.dart';
-import 'package:school_management_system/student/Widgets/custom_progress_indecator.dart';
-import 'package:school_management_system/teacher/controllers/SubjectController/TMarksController.dart';
-import 'package:school_management_system/teacher/view/SProfile/SProfileScreen.dart';
-import 'package:school_management_system/teacher/widgets/ConnectionStateMessages.dart';
-import 'package:school_management_system/teacher/widgets/Skilton.dart';
 import 'package:shimmer/shimmer.dart';
+
+import '../../../public/utils/constant.dart';
+import '../../../public/utils/font_families.dart';
+import '../../../student/Widgets/animated_progress_indicator.dart';
+import '../../controllers/SubjectController/TMarksController.dart';
+import '../../widgets/ConnectionStateMessages.dart';
+import '../../widgets/Skilton.dart';
+import '../SProfile/SProfileScreen.dart';
 
 var _controller = Get.put(TMarksController());
 var data = Get.arguments;

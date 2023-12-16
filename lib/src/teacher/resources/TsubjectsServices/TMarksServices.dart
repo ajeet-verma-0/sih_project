@@ -1,5 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:school_management_system/teacher/model/subject/TMarksModel.dart';
+
+import '../../model/subject/TMarksModel.dart';
 
 class TMarksServices {
   getAllMarks(String subjectId, String grade, String classid) async {

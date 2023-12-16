@@ -1,13 +1,13 @@
 import 'package:custom_navigation_bar/custom_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:school_management_system/public/utils/constant.dart';
-import 'package:school_management_system/public/utils/font_style.dart';
-import 'package:school_management_system/student/controllers/home_controller.dart';
-import 'package:school_management_system/student/controllers/subject/subjectController.dart';
-import 'package:school_management_system/student/view/Home/home_appbar.dart';
-import 'package:school_management_system/student/view/Home/home_body.dart';
-import 'package:school_management_system/student/view/Home/side_menu.dart';
+
+import '../../../public/utils/constant.dart';
+import '../../../public/utils/font_style.dart';
+import '../../../student/controllers/home_controller.dart';
+import '../../../student/controllers/subject/subjectController.dart';
+import '../../../student/view/Home/home_appbar.dart';
+import '../../../student/view/Home/side_menu.dart';
 
 
 final HomeController c = Get.put<HomeController>(HomeController());

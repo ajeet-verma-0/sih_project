@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:school_management_system/public/utils/constant.dart';
-import 'package:school_management_system/routes/app_pages.dart';
-import 'package:school_management_system/teacher/model/user.dart';
-import 'package:school_management_system/teacher/resources/chat/chat_api.dart';
-import 'package:school_management_system/teacher/widgets/chat_body_widget.dart';
-import 'package:school_management_system/teacher/widgets/chat_header_widget.dart';
+
+import '../../../public/utils/constant.dart';
+import '../../../routes/app_pages.dart';
+import '../../../student/Widgets/chat_body_widget.dart';
+import '../../../student/Widgets/chat_header_widget.dart';
+import '../../../student/models/user.dart';
+import '../../../student/resources/chat/chat_api.dart';
 
 
 

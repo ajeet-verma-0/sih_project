@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:school_management_system/public/utils/constant.dart';
-import 'package:school_management_system/public/utils/font_families.dart';
-import 'package:school_management_system/routes/app_pages.dart';
-import 'package:school_management_system/teacher/controllers/SubjectController/TeacherSubjectController.dart';
-import 'package:school_management_system/teacher/view/TSubject/TSubjectsInfo.dart';
-import 'package:school_management_system/teacher/widgets/ConnectionStateMessages.dart';
-import 'package:school_management_system/teacher/widgets/Skilton.dart';
 import 'package:shimmer/shimmer.dart';
+
+import '../../../../public/utils/constant.dart';
+import '../../../../public/utils/font_families.dart';
+import '../../../../routes/app_pages.dart';
+import '../../../controllers/SubjectController/TeacherSubjectController.dart';
+import '../../../widgets/ConnectionStateMessages.dart';
+import '../../../widgets/Skilton.dart';
 
 var _controller = Get.put<TeacherSubjectController>(TeacherSubjectController());
 

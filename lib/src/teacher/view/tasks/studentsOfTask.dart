@@ -8,13 +8,12 @@ import 'package:get/get.dart';
 import 'package:intl/intl.dart';
 import 'package:open_file/open_file.dart';
 import 'package:path_provider/path_provider.dart';
-import 'package:school_management_system/public/utils/constant.dart';
-import 'package:school_management_system/public/utils/font_families.dart';
-import 'package:school_management_system/student/Widgets/custom_appbar.dart';
-import 'package:school_management_system/student/view/Home/home_appbar.dart';
-import 'package:school_management_system/teacher/controllers/TasksControllers/CheckedStudentTaskInfoController.dart';
-import 'package:school_management_system/teacher/controllers/TasksControllers/studentTaskInfo.dart';
-import 'package:school_management_system/teacher/widgets/ConnectionStateMessages.dart';
+
+import '../../../public/utils/constant.dart';
+import '../../../public/utils/font_families.dart';
+import '../../controllers/TasksControllers/CheckedStudentTaskInfoController.dart';
+import '../../controllers/TasksControllers/studentTaskInfo.dart';
+import '../../widgets/ConnectionStateMessages.dart';
 
 class StudentsOfTask extends StatelessWidget {
   StudentsOfTask({Key? key, this.taskId, this.taskName}) : super(key: key);

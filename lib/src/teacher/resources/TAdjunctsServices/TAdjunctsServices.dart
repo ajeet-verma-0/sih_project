@@ -1,10 +1,10 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:school_management_system/public/config/user_information.dart';
-import 'package:school_management_system/teacher/model/TRefrenceModels/TpdfFilesModel.dart';
 
+import '../../../public/config/user_information.dart';
 import '../../../student/models/Adjuncts/refrencesVideos.dart';
 import '../../model/TRefrenceModels/TAddvideoModel.dart';
 import '../../model/TRefrenceModels/TpdfAddFileModel.dart';
+import '../../model/TRefrenceModels/TpdfFilesModel.dart';
 import '../../view/tasks/AddFiles/components/SelectFile.dart';
 
 class TAdjunctsServices {

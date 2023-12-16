@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:school_management_system/public/utils/constant.dart';
-import 'package:school_management_system/public/utils/font_families.dart';
-import 'package:school_management_system/public/utils/font_style.dart';
-import 'package:school_management_system/routes/app_pages.dart';
-import 'package:school_management_system/teacher/view/tasks/TeacherTasksPage.dart';
-import 'package:school_management_system/teacher/view/tasks/studentsOfTask.dart';
+import 'package:rural_education/src/teacher/view/tasks/index.dart';
+
+import '../../../public/utils/constant.dart';
+import '../../../public/utils/font_families.dart';
+import '../../../public/utils/font_style.dart';
+import '../../../routes/app_pages.dart';
 
 class TeacherTasksCard extends StatelessWidget {
   const TeacherTasksCard({

@@ -5,9 +5,12 @@ import 'package:file_picker/file_picker.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:school_management_system/public/utils/constant.dart';
 
-import '../../../../../main.dart';
+import '../../../../../public/utils/constant.dart';
+
+// import 'package:school_management_system/public/utils/constant.dart';
+
+// import '../../../../../main.dart';
 
 Future selectfile() async {
   File? file;
@@ -55,6 +58,8 @@ pickImage(ImageSource source) async {
 }
 
 showNotification(String filename, String path) {
+  FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
+    FlutterLocalNotificationsPlugin();
   flutterLocalNotificationsPlugin.show(
       0,
       filename,

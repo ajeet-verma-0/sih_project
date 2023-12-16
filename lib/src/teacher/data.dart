@@ -6,7 +6,7 @@
 // String myUrlAvatar = 'https://i.imgur.com/GXoYikT.png';
 
 // Napoleon
-import 'package:school_management_system/public/config/user_information.dart';
+import 'package:rural_education/src/public/config/user_information.dart';
 
 String myId = UserInformation.User_uId;
 String myUsername = 'Barack Obama';

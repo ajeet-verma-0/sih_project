@@ -6,7 +6,6 @@ import 'package:get/get_state_manager/src/simple/get_state.dart';
 import '../../../public/utils/font_style.dart';
 import '../../../student/Widgets/CustomAppBar.dart';
 import '../../../student/controllers/TasksController.dart';
-import 'package:school_management_system/student/view/TasksScreen/TasksPage.dart';
 
 class TaskScreen extends StatelessWidget {
   const TaskScreen({Key? key}) : super(key: key);

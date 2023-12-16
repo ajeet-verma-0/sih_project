@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:school_management_system/public/utils/constant.dart';
-import 'package:school_management_system/public/utils/font_families.dart';
-import 'package:school_management_system/student/controllers/lessonsController.dart';
-import 'package:school_management_system/teacher/controllers/SubjectController/SubjectMainScreenController.dart';
-import 'package:school_management_system/teacher/controllers/TasksControllers/bottomSheetController.dart';
-import 'package:school_management_system/teacher/view/TSubject/TMarkScreen.dart';
-import 'package:school_management_system/teacher/view/TSubject/TlessonScreen.dart';
+import 'package:rural_education/src/teacher/view/TSubject/TMarkScreen.dart';
+import 'package:rural_education/src/teacher/view/TSubject/TlessonScreen.dart';
+
+import '../../../public/utils/constant.dart';
+import '../../../public/utils/font_families.dart';
+import '../../controllers/SubjectController/SubjectMainScreenController.dart';
+import '../../controllers/TasksControllers/bottomSheetController.dart';
 
 var _controller = Get.put(SubjectMainScreenController());
 
@@ -27,11 +27,11 @@ class TSubjectScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         elevation: 5,
-        title: Row(
+        title: const Row(
           children: [
-            const Text(
+            Text(
               'Subjects',
-              style: const TextStyle(
+              style: TextStyle(
                 color: white,
                 fontSize: 24,
                 fontFamily: RedHatDisplay.regular,
@@ -43,7 +43,7 @@ class TSubjectScreen extends StatelessWidget {
           decoration: const BoxDecoration(
             gradient: gradientColor,
             image: DecorationImage(
-              image: const AssetImage(
+              image: AssetImage(
                   'assets/images/appbar-background-squares.png'),
               fit: BoxFit.cover,
             ),
@@ -81,7 +81,7 @@ class TSubjectScreen extends StatelessWidget {
                             borderRadius: BorderRadius.circular(5),
                           ),
                           child: const Center(
-                            child: const Text(
+                            child: Text(
                               'Contents',
                               style: TextStyle(
                                 fontSize: 12,
@@ -99,7 +99,7 @@ class TSubjectScreen extends StatelessWidget {
                             borderRadius: BorderRadius.circular(5),
                           ),
                           child: const Center(
-                            child: const Text(
+                            child: Text(
                               'Marks',
                               style: TextStyle(
                                 letterSpacing: 2,
@@ -146,7 +146,7 @@ class TSubjectScreen extends StatelessWidget {
                       ),
                       const Text(
                         ' lesson',
-                        style: const TextStyle(
+                        style: TextStyle(
                           color: primaryColor,
                           fontSize: 20,
                           fontFamily: RedHatDisplay.medium,
@@ -169,7 +169,7 @@ class TSubjectScreen extends StatelessWidget {
                                   AsyncSnapshot snapshot) {
                                 return Text(
                                   '${_controller.lessonNumber.value.toString()}',
-                                  style: TextStyle(
+                                  style: const TextStyle(
                                     color: black,
                                     fontSize: 20,
                                     fontFamily: RedHatDisplay.medium,
@@ -224,6 +224,6 @@ class TSubjectScreen extends StatelessWidget {
         ),
       ),
     );
-    ;
+    
   }
 }

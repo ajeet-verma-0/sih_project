@@ -1,13 +1,14 @@
 import 'package:custom_navigation_bar/custom_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:school_management_system/public/utils/constant.dart';
-import 'package:school_management_system/public/utils/font_style.dart';
-import 'package:school_management_system/student/view/Home/home_appbar.dart';
-import 'package:school_management_system/student/view/Home/side_menu.dart';
-import 'package:school_management_system/teacher/controllers/home_controller.dart';
-import 'package:school_management_system/teacher/view/TAnnouncements/TAnnouncementsScreen.dart';
-import 'package:school_management_system/teacher/view/TProfile/TProfileScreen.dart';
+
+import '../../../public/utils/constant.dart';
+import '../../../public/utils/font_style.dart';
+import '../../../student/view/Home/home_appbar.dart';
+import '../../../student/view/Home/side_menu.dart';
+import '../../controllers/home_controller.dart';
+import '../TAnnouncements/TAnnouncementsScreen.dart';
+import '../TProfile/TProfileScreen.dart';
 
 var _controller = TeacherHomeController();
 

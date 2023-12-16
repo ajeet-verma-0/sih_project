@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:school_management_system/public/utils/constant.dart';
-import 'package:school_management_system/public/utils/font_style.dart';
-import 'package:school_management_system/teacher/model/user.dart';
-import 'package:school_management_system/teacher/view/Chat/chat_page.dart';
+
+import '../../public/utils/constant.dart';
+import '../../public/utils/font_style.dart';
+import '../../student/models/user.dart';
+import '../../student/view/Chat/chat_page.dart';
 
 class ChatHeaderWidget extends StatelessWidget {
   final List<User> users;

@@ -4,14 +4,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:school_management_system/public/utils/constant.dart';
-import 'package:school_management_system/public/utils/font_style.dart';
-import 'package:school_management_system/student/Widgets/CustomAppBar.dart';
-import 'package:school_management_system/student/Widgets/custom_progress_indecator.dart';
-import 'package:school_management_system/student/Widgets/global_info.dart';
-import 'package:school_management_system/teacher/controllers/TProfilesController/TProfileController.dart';
-import 'package:school_management_system/teacher/view/Home/homeFlashbar.dart';
-import 'package:school_management_system/teacher/view/tasks/AddFiles/components/SelectFile.dart';
+
+import '../../../public/utils/constant.dart';
+import '../../../public/utils/font_style.dart';
+import '../../../student/Widgets/CustomAppBar.dart';
+import '../../../student/Widgets/global_info.dart';
+import '../../controllers/TProfilesController/TProfileController.dart';
+import '../tasks/AddFiles/components/SelectFile.dart';
 
 var _controller = Get.put(TProfileController());
 

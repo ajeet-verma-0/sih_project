@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-
-import 'package:school_management_system/public/utils/constant.dart';
-import 'package:school_management_system/public/utils/font_families.dart';
-import 'package:school_management_system/public/utils/font_style.dart';
-import 'package:school_management_system/student/Widgets/CustomAppBar.dart';
-import 'package:school_management_system/student/Widgets/custom_progress_indecator.dart';
-import 'package:school_management_system/student/Widgets/global_info.dart';
-import 'package:school_management_system/teacher/controllers/TProfilesController/DropMenuController.dart';
-import 'package:school_management_system/teacher/controllers/TProfilesController/SProfileController.dart';
-import 'package:school_management_system/teacher/widgets/ConnectionStateMessages.dart';
-import 'package:school_management_system/teacher/widgets/Skilton.dart';
 import 'package:shimmer/shimmer.dart';
+
+import '../../../public/utils/constant.dart';
+import '../../../public/utils/font_families.dart';
+import '../../../public/utils/font_style.dart';
+import '../../../student/Widgets/CustomAppBar.dart';
+import '../../../student/Widgets/custom_progress_indecator.dart';
+import '../../../student/Widgets/global_info.dart';
+import '../../controllers/TProfilesController/DropMenuController.dart';
+import '../../controllers/TProfilesController/SProfileController.dart';
+import '../../widgets/ConnectionStateMessages.dart';
+import '../../widgets/Skilton.dart';
 
 var _controller = Get.put(SProfileController());
 var data = Get.arguments;

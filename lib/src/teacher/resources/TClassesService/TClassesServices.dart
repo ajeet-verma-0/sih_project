@@ -1,7 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:school_management_system/public/config/user_information.dart';
-import 'package:school_management_system/teacher/Teacher_global_info/Classes_of_Teacher/TeacherClasses.dart';
-import 'package:school_management_system/teacher/model/Home/classRoomModel.dart';
+
+import '../../../public/config/user_information.dart';
+import '../../Teacher_global_info/Classes_of_Teacher/TeacherClasses.dart';
+import '../../model/Home/classRoomModel.dart';
 
 class TClassesServices {
   getTeacherClasses() async {

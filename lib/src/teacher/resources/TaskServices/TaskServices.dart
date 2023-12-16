@@ -2,14 +2,11 @@ import 'dart:io';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_storage/firebase_storage.dart';
-import 'package:school_management_system/public/config/user_information.dart';
-import 'package:school_management_system/student/models/task/task_model.dart';
-import 'package:school_management_system/student/view/Adjuncts/refrences.dart';
-import 'package:school_management_system/teacher/model/Tasks/tasksModel.dart';
-import 'package:school_management_system/teacher/view/tasks/AddFiles/components/Tgrade.dart';
 
+import '../../../public/config/user_information.dart';
 import '../../model/Tasks/checkedStudentTaskInfo.dart';
 import '../../model/Tasks/studentTaskInfo.dart';
+import '../../model/Tasks/tasksModel.dart';
 
 class TaskServices {
   getteacherTasks() async {

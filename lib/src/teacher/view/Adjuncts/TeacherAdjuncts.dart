@@ -1,20 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:school_management_system/public/utils/constant.dart';
-import 'package:school_management_system/public/utils/font_families.dart';
-import 'package:school_management_system/public/utils/font_style.dart';
-import 'package:school_management_system/student/models/Adjuncts/refrencesChipsdata.dart';
-import 'package:school_management_system/teacher/controllers/RefrencesControllers/TPdfRefrencesController.dart';
-import 'package:school_management_system/teacher/controllers/RefrencesControllers/TrefrenceBottomSheetController.dart';
-import 'package:school_management_system/teacher/controllers/TasksControllers/bottomSheetController.dart';
-import 'package:school_management_system/teacher/view/Adjuncts/TQuizz.dart';
-import 'package:school_management_system/teacher/view/Adjuncts/TVideos.dart';
-import 'package:school_management_system/teacher/view/Adjuncts/TeacherPdfRefrences.dart';
-import 'package:school_management_system/teacher/view/Adjuncts/component/Buttonsstatus.dart';
-import 'package:school_management_system/teacher/view/tasks/AddFiles/components/Tgrade.dart';
-import 'package:school_management_system/teacher/view/tasks/TeacherTasksPage.dart';
+import 'package:rural_education/src/teacher/view/Adjuncts/TVideos.dart';
 
+import '../../../public/utils/constant.dart';
+import '../../../public/utils/font_style.dart';
+import '../../../student/models/Adjuncts/refrencesChipsdata.dart';
+import '../../controllers/RefrencesControllers/TrefrenceBottomSheetController.dart';
+import '../tasks/index.dart';
+import 'TQuizz.dart';
+import 'TeacherPdfRefrences.dart';
+import 'component/Buttonsstatus.dart';
 import 'component/TgradeRefrence.dart';
 
 class TeacherAdjuncts extends StatefulWidget {

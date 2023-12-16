@@ -4,10 +4,15 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
 
-import 'package:school_management_system/public/utils/constant.dart';
-import 'package:school_management_system/public/utils/font_families.dart';
-import 'package:school_management_system/student/view/Announcements/announcementsCard.dart';
-import 'package:school_management_system/teacher/controllers/AnnouncementsController/AnnouncementsController.dart';
+import '../../../public/utils/constant.dart';
+import '../../../public/utils/font_families.dart';
+import '../../../student/view/Announcements/announcementsCard.dart';
+import '../../controllers/AnnouncementsController/AnnouncementsController.dart';
+
+// import 'package:school_management_system/public/utils/constant.dart';
+// import 'package:school_management_system/public/utils/font_families.dart';
+// import 'package:school_management_system/student/view/Announcements/announcementsCard.dart';
+// import 'package:school_management_system/teacher/controllers/AnnouncementsController/AnnouncementsController.dart';
 
 var _controller = Get.put<TAnnouncementsController>(TAnnouncementsController());
 

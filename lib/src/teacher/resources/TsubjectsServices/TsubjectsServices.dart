@@ -1,7 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:school_management_system/public/config/user_information.dart';
-import 'package:school_management_system/teacher/Teacher_global_info/Subjects_of_teacher/TeacherSubjects.dart';
-import 'package:school_management_system/teacher/model/subject/TeacherSubjectModel.dart';
+
+import '../../../public/config/user_information.dart';
+import '../../Teacher_global_info/Subjects_of_teacher/TeacherSubjects.dart';
+import '../../model/subject/TeacherSubjectModel.dart';
 
 class TSubjetcsServices {
   getTeacherSubjectForClass(String grade, String classId) async {

@@ -1,7 +1,8 @@
 
 import 'package:flutter/material.dart';
-import 'package:school_management_system/public/utils/constant.dart';
-import 'package:school_management_system/teacher/model/message.dart';
+
+import '../../public/utils/constant.dart';
+import '../../student/models/chat/message.dart';
 
 
 class MessageWidget extends StatelessWidget {

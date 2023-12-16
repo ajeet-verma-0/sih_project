@@ -10,12 +10,6 @@ import 'package:get/get.dart';
 import 'package:get/get_state_manager/src/rx_flutter/rx_obx_widget.dart';
 import 'package:intl/intl.dart';
 import 'package:path_provider/path_provider.dart';
-import 'package:school_management_system/routes/app_pages.dart';
-import 'package:school_management_system/student/view/Subjects/SubjectsScreen.dart';
-import 'package:school_management_system/teacher/controllers/home_controller.dart';
-import 'package:school_management_system/teacher/view/TSubject/Subjects/SubjectScreen.dart';
-import 'package:school_management_system/teacher/view/TSubject/TSubjectsInfo.dart';
-import 'package:school_management_system/teacher/widgets/ConnectionStateMessages.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import 'package:table_calendar/table_calendar.dart';
@@ -24,11 +18,14 @@ import '../../../public/login/dividerforparent.dart';
 import '../../../public/utils/constant.dart';
 import '../../../public/utils/font_style.dart';
 import '../../../public/utils/util.dart';
+import '../../../routes/app_pages.dart';
 import '../../../student/models/programs/programModel.dart';
 import '../../../student/view/Home/home.dart';
 import '../../../student/view/Home/home_appbar.dart';
 import '../../../student/view/Home/side_menu.dart';
 import '../../../student/view/Home/subjectCart.dart';
+import '../../controllers/home_controller.dart';
+import '../../widgets/ConnectionStateMessages.dart';
 
 var _controller = Get.put(TeacherHomeController());
 

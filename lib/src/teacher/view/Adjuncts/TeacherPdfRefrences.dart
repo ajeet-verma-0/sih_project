@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:school_management_system/student/view/Adjuncts/refrences.dart';
-import 'package:school_management_system/teacher/controllers/RefrencesControllers/TPdfRefrencesController.dart';
-import 'package:school_management_system/teacher/widgets/ConnectionStateMessages.dart';
+
+import '../../../student/view/Adjuncts/refrences.dart';
+import '../../controllers/RefrencesControllers/TPdfRefrencesController.dart';
+import '../../widgets/ConnectionStateMessages.dart';
 
 var _controller = Get.find<TRefrencesPdfController>();
 

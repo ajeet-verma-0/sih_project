@@ -8,6 +8,9 @@ import 'package:rural_education/src/features/authentication/controllers/on_board
 import 'package:rural_education/src/features/repository/authentication_repository/authentication_repository.dart';
 import 'package:rural_education/src/utils/theme/theme.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
+// import 'package:smooth_page_indicator/smooth_page_indicator.dart';
+
+late Size mq;
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();

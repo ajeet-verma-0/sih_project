@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:school_management_system/public/utils/constant.dart';
-import 'package:school_management_system/teacher/model/user.dart';
-import 'package:school_management_system/teacher/view/Chat/chat_page.dart';
+
+import '../../student/models/user.dart';
+import '../../student/view/Chat/chat_page.dart';
 
 class ChatBodyWidget extends StatelessWidget {
   final List<User> users;
