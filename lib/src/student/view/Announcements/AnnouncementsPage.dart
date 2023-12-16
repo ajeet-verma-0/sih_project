@@ -2,14 +2,16 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:school_management_system/public/config/user_information.dart';
-import 'package:school_management_system/public/utils/constant.dart';
-import 'package:school_management_system/public/utils/font_families.dart';
-import 'package:school_management_system/student/controllers/AnnouncementsController.dart';
-import 'package:school_management_system/student/resources/AnnouncementsServeces/AnnouncementsServeces.dart';
-import 'package:school_management_system/student/view/Announcements/announcementsCard.dart';
+
 import 'package:intl/intl.dart';
-import 'package:school_management_system/teacher/widgets/ConnectionStateMessages.dart';
+
+import '../../../public/utils/constant.dart';
+import '../../../public/utils/font_families.dart';
+import '../../../teacher/widgets/ConnectionStateMessages.dart';
+import '../../controllers/AnnouncementsController.dart';
+import '../../resources/AnnouncementsServeces/AnnouncementsServeces.dart';
+import 'announcementsCard.dart';
+
 
 var _controller = Get.put<AnnouncementsController>(AnnouncementsController());
 var announcementsList = _controller.announcementsList.value;

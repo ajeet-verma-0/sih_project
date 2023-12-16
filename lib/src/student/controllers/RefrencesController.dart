@@ -1,17 +1,16 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:get/state_manager.dart';
-import 'package:school_management_system/public/config/user_information.dart';
-import 'package:school_management_system/student/models/Adjuncts/filtter/DifficultyFiltter.dart';
-import 'package:school_management_system/student/models/Adjuncts/filtter/filteredData.dart';
-import 'package:school_management_system/student/models/Adjuncts/filtter/gradeCircle.dart';
-import 'package:school_management_system/student/models/Adjuncts/filtter/subjectFiltterModel.dart';
-import 'package:school_management_system/student/models/Adjuncts/refrencesFiles.dart';
-import 'package:school_management_system/student/models/Adjuncts/refrencesVideos.dart';
-import 'package:school_management_system/student/resources/RefrencesServices/RefrencesPdfServices.dart';
+
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 import 'package:http/http.dart' as http;
 
+import '../../public/config/user_information.dart';
 import '../../teacher/resources/TAdjunctsServices/TAdjunctsServices.dart';
+import '../models/Adjuncts/filtter/DifficultyFiltter.dart';
+import '../models/Adjuncts/filtter/filteredData.dart';
+import '../models/Adjuncts/filtter/gradeCircle.dart';
+import '../models/Adjuncts/filtter/subjectFiltterModel.dart';
+import '../resources/RefrencesServices/RefrencesPdfServices.dart';
 
 class RefrencesController extends GetxController {
   //Books refrences

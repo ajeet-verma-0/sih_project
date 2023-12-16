@@ -4,12 +4,13 @@ import 'package:get/get.dart';
 import 'dart:typed_data';
 
 import 'package:image_picker/image_picker.dart';
-import 'package:school_management_system/public/config/user_information.dart';
-import 'package:school_management_system/student/resources/student_services/stservices.dart';
 
+
+import '../../public/config/user_information.dart';
 import '../../teacher/resources/ProfilesServices/SProfileservices.dart';
 import '../resources/stProfileServices/stProfileServices.dart';
 import '../resources/student_services/storage_methods.dart';
+import '../resources/student_services/stservices.dart';
 
 class StprofileController extends GetxController {
   Rx<Uint8List> image = Uint8List(0).obs;

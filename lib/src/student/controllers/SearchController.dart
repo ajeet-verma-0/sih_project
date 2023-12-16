@@ -1,7 +1,8 @@
 
 
 import 'package:get/get.dart';
-import 'package:school_management_system/student/resources/chat/chat_api.dart';
+
+import '../resources/chat/chat_api.dart';
 
 class SearchControllers extends GetxController {
  bool searchStatus = true;

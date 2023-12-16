@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:school_management_system/public/utils/font_style.dart';
-import 'package:school_management_system/student/Widgets/animated_progress_indicator.dart';
+
 
 import '../../public/utils/constant.dart';
+import '../../public/utils/font_style.dart';
+import 'animated_progress_indicator.dart';
 
 class ProgressIndecator extends StatelessWidget {
   ProgressIndecator({

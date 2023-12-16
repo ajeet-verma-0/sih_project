@@ -1,6 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:school_management_system/public/config/user_information.dart';
-import 'package:school_management_system/student/models/user.dart';
+import 'package:rural_education/src/student/models/user.dart';
+
+import '../../../public/config/user_information.dart';
+
 
 class StudentApi {
   static getinfo(String? idUser) async {

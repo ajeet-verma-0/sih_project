@@ -1,7 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:get/state_manager.dart';
-import 'package:school_management_system/student/resources/RefrencesServices/RefrencesPdfServices.dart';
 
+
+import '../resources/RefrencesServices/RefrencesPdfServices.dart';
 import '../view/Adjuncts/Component/QuizBrain.dart';
 
 class QuizzController extends GetxController {

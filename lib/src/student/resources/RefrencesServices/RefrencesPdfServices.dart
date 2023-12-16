@@ -1,12 +1,12 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:get/get.dart';
-import 'package:school_management_system/student/models/Adjuncts/QuizzModel.dart';
-import 'package:school_management_system/student/models/Adjuncts/filtter/filteredData.dart';
-import 'package:school_management_system/student/models/Adjuncts/filtter/subjectFiltterModel.dart';
-import 'package:school_management_system/student/models/Adjuncts/refrencesFiles.dart';
-import 'package:school_management_system/student/models/Adjuncts/refrencesVideos.dart';
-import 'package:school_management_system/student/view/Adjuncts/refrences.dart';
+
+import '../../models/Adjuncts/QuizzModel.dart';
+import '../../models/Adjuncts/filtter/filteredData.dart';
+import '../../models/Adjuncts/refrencesFiles.dart';
+import '../../models/Adjuncts/refrencesVideos.dart';
+
 
 class RefrencesPdfServices {
   getPdfInfo() async {

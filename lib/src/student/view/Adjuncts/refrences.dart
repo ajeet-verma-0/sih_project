@@ -5,19 +5,19 @@ import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:permission_handler/permission_handler.dart';
-import 'package:school_management_system/public/utils/constant.dart';
-import 'package:school_management_system/public/utils/font_families.dart';
-import 'package:school_management_system/student/controllers/RefrencesController.dart';
-import 'package:get/get.dart';
-import 'package:school_management_system/student/models/Adjuncts/refrencesFiles.dart';
-import 'package:school_management_system/student/resources/RefrencesServices/RefrencesPdfServices.dart';
+
 import 'package:shimmer/shimmer.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:url_launcher/url_launcher_string.dart';
+import '../../../public/utils/constant.dart';
+import '../../../public/utils/font_families.dart';
 import '../../../teacher/view/tasks/AddFiles/components/SelectFile.dart';
 import '../../../teacher/view/tasks/studentsOfTask.dart';
+import '../../controllers/RefrencesController.dart';
+import '../../resources/RefrencesServices/RefrencesPdfServices.dart';
 
 var _controller = Get.put(RefrencesController());
 var _filesInfo = _controller.filesinfo;

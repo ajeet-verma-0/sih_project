@@ -1,6 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:school_management_system/public/config/user_information.dart';
-import 'package:school_management_system/student/models/Subjects/SubjectsModel.dart';
+
+import '../../../public/config/user_information.dart';
+import '../../models/Subjects/SubjectsModel.dart';
+
 
 class MarkServices {
   getExam1Result(String subjectId) async {

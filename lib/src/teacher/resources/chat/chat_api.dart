@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_storage/firebase_storage.dart';
-import 'package:liquid_swipe/liquid_swipe.dart';
+// import 'package:liquid_swipe/liquid_swipe.dart';
 import 'package:rural_education/src/student/models/chat/message.dart';
 
 
@@ -10,18 +10,19 @@ import 'package:rural_education/src/student/models/chat/message.dart';
 import 'dart:io';
 
 import 'package:rural_education/src/student/models/user.dart';
+import 'package:rural_education/src/student/resources/chat/chat_utils.dart';
 
 import '../../../student/data.dart';
 
 
 class FirebaseApi {
-  static Stream<List<User>> getUsers() => FirebaseFirestore.instance
-      .collection('students')
-      .where('uid', isNotEqualTo: myId)
-      .orderBy('uid')
-      .orderBy(UserField.lastMessageTime, descending: true)
-      .snapshots()
-      .transform(Utils.transformer(User.fromJson));
+    static Stream<List<User>> getUsers() => FirebaseFirestore.instance
+        .collection('students')
+        .where('uid', isNotEqualTo: myId)
+        .orderBy('uid')
+        .orderBy(UserField.lastMessageTime, descending: true)
+        .snapshots()
+        .transform(Utils.transformer(User.fromJson));
 
   static Future uploadMessage(String? idUser, String message) async {
     final refMessages =

@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:school_management_system/public/utils/constant.dart';
+
 import '../../public/config/user_information.dart';
+import '../../public/utils/constant.dart';
 import '../resources/chat/chat_api.dart';
-import 'package:school_management_system/student/view/Home/messaging.dart';
+
 class NewMessageWidget extends StatefulWidget {
   final String? idUser;
 

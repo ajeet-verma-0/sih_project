@@ -1,8 +1,10 @@
 
 
 import 'package:flutter/material.dart';
-import 'package:school_management_system/public/utils/constant.dart';
-import 'package:school_management_system/public/utils/font_style.dart';
+
+
+import '../../public/utils/constant.dart';
+import '../../public/utils/font_style.dart';
 
 class CustomHomeAppbar extends StatelessWidget {
   const CustomHomeAppbar({

@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:school_management_system/public/utils/constant.dart';
-import 'package:school_management_system/public/utils/font_families.dart';
-import 'package:school_management_system/student/controllers/lessonsController.dart';
-import 'package:school_management_system/student/view/Subjects/LessonsScreen.dart';
-import 'package:school_management_system/student/view/Subjects/MarksScreen.dart';
+
+import '../../../public/utils/constant.dart';
+import '../../../public/utils/font_families.dart';
+import '../../controllers/lessonsController.dart';
+import 'LessonsScreen.dart';
+import 'MarksScreen.dart';
+
 
 var _controller = Get.put<lessonsController>(lessonsController());
 var lessonList = _controller.lessonslist.value;

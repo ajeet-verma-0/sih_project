@@ -1,7 +1,8 @@
 
 
 import 'package:flutter/material.dart';
-import 'package:school_management_system/public/utils/constant.dart';
+
+import '../utils/constant.dart';
 import '../utils/font_style.dart';
 import 'package:url_launcher/url_launcher.dart';
 

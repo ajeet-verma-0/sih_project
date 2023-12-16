@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:school_management_system/public/utils/constant.dart';
+
+import '../../public/utils/constant.dart';
 
 class ProfileHeaderWidget extends StatelessWidget {
   final String? name;

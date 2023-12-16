@@ -2,13 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:school_management_system/student/controllers/RefrencesController.dart';
-import 'package:school_management_system/student/view/Adjuncts/Component/filtter/filtterComponent/DifficultyFiltter.dart';
-import 'package:school_management_system/student/view/Adjuncts/Component/filtter/filtterComponent/gradefiltter.dart';
-import 'package:school_management_system/student/view/Adjuncts/Component/filtter/filtterComponent/subjectFiltter.dart';
+
 
 import '../../../../../public/utils/constant.dart';
 import '../../../../../public/utils/font_families.dart';
+import '../../../../controllers/RefrencesController.dart';
+import 'filtterComponent/DifficultyFiltter.dart';
+import 'filtterComponent/gradefiltter.dart';
+import 'filtterComponent/subjectFiltter.dart';
 
 var _controller = Get.put(RefrencesController());
 

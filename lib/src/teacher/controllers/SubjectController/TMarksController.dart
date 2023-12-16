@@ -5,8 +5,7 @@ import '../../resources/TsubjectsServices/TMarksServices.dart';
 
 class TMarksController extends GetxController {
   var service = TMarksServices();
-  var studentsMarks = <TMarksStud
-  entModel>[].obs;
+  var studentsMarks = <TMarksStudentModel>[].obs;
 
   var subjectId = ''.obs;
   var grade = ''.obs;

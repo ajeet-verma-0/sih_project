@@ -57,17 +57,17 @@ pickImage(ImageSource source) async {
   }
 }
 
-showNotification(String filename, String path) {
-  FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
-    FlutterLocalNotificationsPlugin();
-  flutterLocalNotificationsPlugin.show(
-      0,
-      filename,
-      "The file has been downloaded\n$path",
-      NotificationDetails(
-          android: AndroidNotificationDetails(channel.id, channel.name,
-              importance: Importance.high,
-              color: primaryColor,
-              playSound: true,
-              icon: '@mipmap/ic_launcher')));
-}
+// showNotification(String filename, String path) {
+//   FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
+//     FlutterLocalNotificationsPlugin();
+//   FlutterLocalNotificationsPlugin.show(
+//       0,
+//       filename,
+//       "The file has been downloaded\n$path",
+//       NotificationDetails(
+//           android: AndroidNotificationDetails(channel.id, channel.name,
+//               importance: Importance.high,
+//               color: primaryColor,
+//               playSound: true,
+//               icon: '@mipmap/ic_launcher')));
+// }

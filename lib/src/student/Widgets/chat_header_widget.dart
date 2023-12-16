@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:school_management_system/public/utils/font_style.dart';
 
+
+import '../../public/utils/font_style.dart';
 import '../models/user.dart';
 import '../view/Chat/chat_page.dart';
 

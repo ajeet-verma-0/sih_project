@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:school_management_system/student/view/Adjuncts/Component/QuizzPage.dart';
+
 
 import '../../../public/utils/constant.dart';
 import '../../../public/utils/font_families.dart';

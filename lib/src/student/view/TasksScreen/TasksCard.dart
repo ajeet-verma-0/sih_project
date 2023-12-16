@@ -8,10 +8,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:path_provider/path_provider.dart';
-import 'package:school_management_system/public/utils/constant.dart';
-import 'package:school_management_system/student/resources/chat/chat_api.dart';
-import 'package:school_management_system/student/resources/task/task_api.dart';
-import 'package:school_management_system/teacher/view/tasks/index.dart';
+
+import '../../../public/utils/constant.dart';
 import '../../../public/utils/font_families.dart';
 import '../../../public/utils/font_style.dart';
 import '../../../public/utils/util.dart';
@@ -19,6 +17,8 @@ import '../../../teacher/view/tasks/AddFiles/components/SelectFile.dart';
 import '../../controllers/TasksController.dart';
 import 'dart:io';
 import 'package:path/path.dart';
+
+import '../../resources/task/task_api.dart';
 
 File? file;
 var _controller = Get.put<TasksController>(TasksController());

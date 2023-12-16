@@ -1,6 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:school_management_system/public/config/user_information.dart';
-import 'package:school_management_system/student/models/programs/programModel.dart';
+
+import '../../../public/config/user_information.dart';
+import '../../models/programs/programModel.dart';
+
 
 class ProgramApi{
 

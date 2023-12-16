@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:school_management_system/public/config/user_information.dart';
 
+
+import '../../../public/config/user_information.dart';
 import '../../../teacher/model/subject/TMarksModel.dart';
 import '../../../teacher/resources/TsubjectsServices/TMarksServices.dart';
 

@@ -1,6 +1,8 @@
 import 'package:get/state_manager.dart';
-import 'package:school_management_system/student/models/Subjects/SubjectsModel.dart';
-import 'package:school_management_system/student/resources/subject/marksServices.dart';
+
+
+import '../models/Subjects/SubjectsModel.dart';
+import '../resources/subject/marksServices.dart';
 
 class MarksController extends GetxController {
   var marksServices = MarkServices();
@@ -35,7 +37,7 @@ class MarksController extends GetxController {
   @override
   void onReady() {
     // TODO: implement onReady
-    print(subjectId.value);
+    // print(subjectId.value);
     super.onReady();
   }
 }

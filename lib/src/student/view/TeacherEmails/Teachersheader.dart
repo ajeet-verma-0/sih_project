@@ -1,8 +1,10 @@
 
 
 import 'package:flutter/material.dart';
-import 'package:school_management_system/public/utils/font_style.dart';
-import 'package:school_management_system/student/models/user.dart';
+import 'package:rural_education/src/student/models/user.dart';
+
+import '../../../public/utils/font_style.dart';
+
 
 
 

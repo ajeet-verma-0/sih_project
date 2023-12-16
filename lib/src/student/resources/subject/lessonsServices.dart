@@ -1,5 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:school_management_system/student/models/Subjects/SubjectsModel.dart';
+
+import '../../models/Subjects/SubjectsModel.dart';
+
 
 class LessonsServices {
   getlessons(String id) async {

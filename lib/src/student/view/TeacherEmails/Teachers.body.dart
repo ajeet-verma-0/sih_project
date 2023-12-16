@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:school_management_system/student/models/user.dart';
+import 'package:rural_education/src/student/models/user.dart';
+
 import 'package:url_launcher/url_launcher.dart';
 
 class TeachersBodyWidget extends StatelessWidget {

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:school_management_system/public/utils/constant.dart';
-import 'package:school_management_system/public/utils/font_families.dart';
-import 'package:school_management_system/student/controllers/lessonsController.dart';
-import 'package:school_management_system/student/controllers/marksController.dart';
-import 'package:school_management_system/teacher/view/TSubject/TMarkScreen.dart';
+
+import '../../../public/utils/constant.dart';
+import '../../../public/utils/font_families.dart';
+import '../../../teacher/view/TSubject/TMarkScreen.dart';
+import '../../controllers/marksController.dart';
 
 class MarksList extends StatelessWidget {
   const MarksList({Key? key, this.subjectId}) : super(key: key);

@@ -1,7 +1,8 @@
 
 import 'package:flutter/material.dart';
-import 'package:school_management_system/public/utils/constant.dart';
 
+
+import '../../../public/utils/constant.dart';
 import '../../Widgets/messages_widget.dart';
 import '../../Widgets/new_message_widget.dart';
 import '../../Widgets/profile_header_widget.dart';

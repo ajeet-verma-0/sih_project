@@ -5,17 +5,15 @@ import 'package:get/get.dart';
 import 'package:flutter_zoom_drawer/flutter_zoom_drawer.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:permission_handler/permission_handler.dart';
-import 'package:school_management_system/public/config/user_information.dart';
-import 'package:school_management_system/student/controllers/subject/subjectController.dart';
-import 'package:school_management_system/student/view/Adjuncts/adjuncts.dart';
-import 'package:school_management_system/student/view/Home/home_body.dart';
-import 'package:school_management_system/student/view/TasksScreen/TasksPage.dart';
-import 'package:school_management_system/student/view/TeacherEmails/Teacherspage.dart';
 
-import '../../main.dart';
+import '../../public/config/user_information.dart';
 import '../resources/Parent/parentApi.dart';
 import '../resources/Programapi/programsapi.dart';
+import '../view/Adjuncts/adjuncts.dart';
 import '../view/Chat/chats_page.dart';
+import '../view/Home/home_body.dart';
+import '../view/TasksScreen/TasksPage.dart';
+import 'subject/subjectController.dart';
 
 var _SubjectController = Get.put<SubjectController>(SubjectController());
 
@@ -54,7 +52,7 @@ class HomeController extends GetxController {
     update();
   }
 
-  showNotification(String filename, String path) {
+ /* showNotification(String filename, String path) {
     flutterLocalNotificationsPlugin.show(
         0,
         filename,
@@ -67,7 +65,7 @@ class HomeController extends GetxController {
                 icon: '@mipmap/ic_launcher')));
   }
 
-  showNotification2(String filename, String path) {
+ showNotification2(String filename, String path) {
     flutterLocalNotificationsPlugin.show(
         0,
         filename,
@@ -78,7 +76,7 @@ class HomeController extends GetxController {
                 color: Colors.blue,
                 playSound: true,
                 icon: '@mipmap/ic_launcher')));
-  }
+  }*/
 
   final zoomDrawerController = ZoomDrawerController();
 

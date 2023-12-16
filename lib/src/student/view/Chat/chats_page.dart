@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:school_management_system/public/utils/constant.dart';
-import 'package:school_management_system/routes/app_pages.dart';
+
 
 import '../../../public/config/user_information.dart';
+import '../../../public/utils/constant.dart';
+import '../../../routes/app_pages.dart';
 import '../../Widgets/chat_body_widget.dart';
 import '../../Widgets/chat_header_widget.dart';
 import '../../models/user.dart';

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:school_management_system/public/utils/constant.dart';
-import 'package:school_management_system/routes/app_pages.dart';
-import 'package:school_management_system/student/controllers/AnnouncementsController.dart';
-import 'package:school_management_system/student/view/Announcements/AnnouncementsPage.dart';
-import 'package:school_management_system/teacher/view/TSubject/TlessonScreen.dart';
+
+import '../../../public/utils/constant.dart';
+import '../../../teacher/view/TSubject/TlessonScreen.dart';
+import '../../controllers/AnnouncementsController.dart';
+
 
 AnnouncementsController _annController =
     Get.put<AnnouncementsController>(AnnouncementsController());

@@ -1,6 +1,4 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:school_management_system/student/models/subjects/SubjectsModel.dart';
-import 'package:school_management_system/teacher/model/Home/classRoomModel.dart';
 
 class TaskModel {
   var id;

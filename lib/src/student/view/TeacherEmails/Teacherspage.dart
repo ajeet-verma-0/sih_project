@@ -1,9 +1,14 @@
+
+
+
 import 'package:flutter/material.dart';
-import 'package:school_management_system/public/utils/constant.dart';
-import 'package:school_management_system/student/models/user.dart';
-import 'package:school_management_system/student/resources/chat/chat_api.dart';
-import 'package:school_management_system/student/view/TeacherEmails/Teachers.body.dart';
-import 'package:school_management_system/student/view/TeacherEmails/Teachersheader.dart';
+import 'package:flutter/widgets.dart';
+import 'package:rural_education/src/student/models/user.dart';
+
+import '../../../public/utils/constant.dart';
+import '../../resources/chat/chat_api.dart';
+import 'Teachers.body.dart';
+import 'Teachersheader.dart';
 
 class TeachersPage extends StatelessWidget {
   @override

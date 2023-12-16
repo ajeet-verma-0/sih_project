@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_phoenix/flutter_phoenix.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
-import 'package:school_management_system/public/config/user_information.dart';
-import 'package:school_management_system/public/utils/constant.dart';
 
+import '../../../public/config/user_information.dart';
+import '../../../public/utils/constant.dart';
 import '../../../public/utils/font_style.dart';
 import '../../../routes/app_pages.dart';
 import '../../controllers/home_controller.dart';
@@ -31,8 +31,8 @@ class SideMenue extends StatelessWidget {
           titleController.text, UserInformation.User_uId);
 
       if (ok) {
-        homeController.showNotification2(
-            'Report', 'The report has been uploaded');
+        // homeController.showNotification2(
+        //     'Report', 'The report has been uploaded');
       }
       titleController.clear();
       contentController.clear();

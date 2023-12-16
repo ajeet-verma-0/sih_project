@@ -4,7 +4,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:gallery_saver/gallery_saver.dart';
+// import 'package:gallery_saver/gallery_saver.dart';
 import 'package:image_gallery_saver/image_gallery_saver.dart';
 import 'package:path_provider/path_provider.dart';
 
@@ -213,10 +213,10 @@ class _MessageCardState extends State<MessageCard> {
                           color: Colors.blue, size: 26),
                       name: 'Save Image',
                       onTap: () async {
-                        try {
+                         /* try {
                           
                           log('Image Url: ${widget.message.msg}');
-                          await GallerySaver.saveImage(
+                        await GallerySaver.saveImage(
                             widget.message.msg,
                             albumName: 'We Chat',
                           ).then((success) {
@@ -229,7 +229,7 @@ class _MessageCardState extends State<MessageCard> {
                           });
                         } catch (e) {
                           log('ErrorWhileSavingImg: $e');
-                        }
+                        }*/
                       }),
 
               //separator or divider

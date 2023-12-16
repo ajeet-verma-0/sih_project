@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:rounded_loading_button/rounded_loading_button.dart';
-import 'package:school_management_system/public/utils/font_style.dart';
+
 import '../utils/constant.dart';
+import '../utils/font_style.dart';
 
 class Roundedbutton extends StatelessWidget {
   const Roundedbutton({

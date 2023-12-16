@@ -1,10 +1,11 @@
 import 'package:get/state_manager.dart';
-import 'package:school_management_system/public/config/user_information.dart';
-import 'package:school_management_system/student/models/task/taskMark_model.dart';
-import 'package:school_management_system/student/models/task/task_model.dart';
-import 'package:path/path.dart';
-import 'package:school_management_system/teacher/view/tasks/AddFiles/components/SelectFile.dart';
 
+import 'package:path/path.dart';
+
+
+import '../../public/config/user_information.dart';
+import '../../teacher/view/tasks/AddFiles/components/SelectFile.dart';
+import '../models/task/taskMark_model.dart';
 import '../models/task/task_result_model.dart';
 import '../resources/task/task_api.dart';
 

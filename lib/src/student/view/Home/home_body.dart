@@ -10,13 +10,8 @@ import 'package:get/get.dart';
 import 'package:open_file/open_file.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:permission_handler/permission_handler.dart';
-import 'package:school_management_system/student/controllers/home_controller.dart';
-import 'package:school_management_system/student/controllers/lessonsController.dart';
-import 'package:school_management_system/student/controllers/subject/subjectController.dart';
-import 'package:school_management_system/student/models/programs/programModel.dart';
-import 'package:school_management_system/student/view/Home/subjectCart.dart';
-import 'package:school_management_system/student/view/Subjects/SubjectsScreen.dart';
 import 'package:shimmer/shimmer.dart';
+
 import 'package:table_calendar/table_calendar.dart';
 import 'package:intl/intl.dart';
 
@@ -24,6 +19,12 @@ import '../../../public/login/dividerforparent.dart';
 import '../../../public/utils/constant.dart';
 import '../../../public/utils/font_style.dart';
 import '../../../public/utils/util.dart';
+import '../../controllers/home_controller.dart';
+import '../../controllers/lessonsController.dart';
+import '../../controllers/subject/subjectController.dart';
+import '../../models/programs/programModel.dart';
+import '../Subjects/SubjectsScreen.dart';
+import 'subjectCart.dart';
 
 var _SubjectController = Get.put<SubjectController>(SubjectController());
 var _LessonsController = Get.put<lessonsController>(lessonsController());
@@ -39,7 +40,7 @@ class HomeScreen extends StatelessWidget {
     return SingleChildScrollView(
       child: Column(
         children: [
-          SizedBox(
+          const SizedBox(
             height: 8,
           ),
           Container(
@@ -94,18 +95,18 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 15,
           ),
           FutureBuilder(
             future: homeController.getPrograms(),
             builder: ((context, AsyncSnapshot snapshot) {
               if (snapshot.connectionState == ConnectionState.waiting) {
-                return Center(child: Text('Loading...'));
+                return const Center(child: Text('Loading...'));
               }
 
               return homeController.myprograms.isEmpty
-                  ? SizedBox(
+                  ? const SizedBox(
                       height: 25,
                       child: Center(
                         child: Text(
@@ -116,7 +117,7 @@ class HomeScreen extends StatelessWidget {
                   : ListView.separated(
                       scrollDirection: Axis.vertical,
                       shrinkWrap: true,
-                      separatorBuilder: (context, index) => SizedBox(
+                      separatorBuilder: (context, index) => const SizedBox(
                         height: 20,
                       ),
                       itemCount: homeController.myprograms.length,
@@ -128,10 +129,10 @@ class HomeScreen extends StatelessWidget {
                     );
             }),
           ),
-          DividerParent(
+          const DividerParent(
             text: "subjects",
           ),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           SizedBox(
@@ -148,7 +149,7 @@ class HomeScreen extends StatelessWidget {
                         return Padding(
                           padding: EdgeInsets.only(
                               left: 20.w, right: 20.w, bottom: 20.h, top: 10.h),
-                          child: ShimmerSubjectsLoading(),
+                          child: const ShimmerSubjectsLoading(),
                         );
                       },
                     );
@@ -191,7 +192,7 @@ class HomeScreen extends StatelessWidget {
                   }
                 })),
           ),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
         ],
@@ -293,7 +294,7 @@ class programCard extends StatelessWidget {
                         fileName: 'file name',
                       );
                     },
-                    child: Icon(
+                    child: const Icon(
                       Icons.arrow_circle_down,
                       color: gray,
                     ),
@@ -315,7 +316,7 @@ class programCard extends StatelessWidget {
     final file = await downloadFile(url, fileName!);
     if (file == null) return;
     print('Path: ${file.path}');
-    homeController.showNotification(fileName, file.path);
+    // homeController.showNotification(fileName, file.path);
     OpenFile.open(file.path);
   }
 

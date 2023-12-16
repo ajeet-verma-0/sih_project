@@ -1,7 +1,8 @@
 import 'package:get/state_manager.dart';
-import 'package:school_management_system/student/models/Subjects/SubjectsModel.dart';
-import 'package:school_management_system/student/resources/subject/lessonsServices.dart';
-import 'package:school_management_system/student/view/Subjects/LessonsScreen.dart';
+
+import '../models/Subjects/SubjectsModel.dart';
+import '../resources/subject/lessonsServices.dart';
+
 
 class lessonsController extends GetxController {
   var lessonsServices = LessonsServices();

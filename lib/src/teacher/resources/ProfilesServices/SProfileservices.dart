@@ -88,8 +88,7 @@ class SprofileServices {
             exam1: exam1,
             exam2: exam2,
           ));
-          dro
-          pController.subjectsDrop.value[subjectName.toString()] =
+          dropController.subjectsDrop.value[subjectName.toString()] =
               subjectId.toString();
           print('Subject name is ');
           print(subjectName.toString());

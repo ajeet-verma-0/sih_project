@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:school_management_system/public/utils/constant.dart';
+
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import '../../public/utils/constant.dart';
 
 AppBar ChatAppBar() {
   return AppBar(

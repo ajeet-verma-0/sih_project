@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:school_management_system/public/config/user_information.dart';
-import 'package:school_management_system/public/utils/constant.dart';
-import 'package:school_management_system/student/Widgets/CustomAppBar.dart';
-import 'package:school_management_system/student/Widgets/custom_progress_indecator.dart';
-import 'package:school_management_system/teacher/widgets/ConnectionStateMessages.dart';
+
+import '../../../public/config/user_information.dart';
+import '../../../public/utils/constant.dart';
 import '../../../public/utils/font_families.dart';
 import '../../../public/utils/font_style.dart';
 import 'dart:typed_data';
 import '../../../teacher/view/SProfile/SProfileScreen.dart';
+import '../../../teacher/widgets/ConnectionStateMessages.dart';
+import '../../Widgets/CustomAppBar.dart';
+import '../../Widgets/custom_progress_indecator.dart';
 import '../../Widgets/global_info.dart';
 import '../../controllers/stprofile_controller.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

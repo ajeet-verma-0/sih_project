@@ -2,9 +2,7 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-
-import 'package:school_management_system/public/utils/constant.dart';
-import 'package:school_management_system/public/utils/font_style.dart';
+import '../../../public/utils/constant.dart';
 import '../../../teacher/view/tasks/TeacherTasksPage.dart';
 import '../../Widgets/CustomAppBar.dart';
 import '../../controllers/TasksController.dart';

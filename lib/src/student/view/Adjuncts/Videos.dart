@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:school_management_system/public/utils/constant.dart';
-import 'package:school_management_system/student/controllers/RefrencesController.dart';
+
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
+
+import '../../../public/utils/constant.dart';
+import '../../controllers/RefrencesController.dart';
 
 var _controller = Get.put(RefrencesController());
 var urlVideo = _controller.VideosInfo.value;
